@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "parlai-poetry-config"
+version = "0.1.0"
+description = "Python poetry dependency manager config for parlai dialogue platform with pytorch cpu support"
+authors = ["M.S. <mixa.ru.ru@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+torch = {url = "https://download.pytorch.org/whl/cpu/torch-1.12.1%2Bcpu-cp310-cp310-linux_x86_64.whl"}
+parlai = "^1.7.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
